@@ -1,6 +1,13 @@
 # Internal reference docs — not for public repo
 ALTISPECTRA_BUSINESS_CONTEXT.md
 BUILD_LOG.md
+AboutUs.txt
+DNS_Migration_Guide.md
+
+# Raw source photography (processed versions in assets/ are committed instead)
+DSC_0160.JPG
+*_Headshot.JPG
+*_Headshot.jpeg
 
 # Source/design assets — not needed for the live site
 Logo/

@@ -1,0 +1,22 @@
+About Us
+The Team
+
+With over 15 years of combined expertise in geomatics and unmanned aerial systems (UAS), Altispectra bridges the gap between raw aerial capture and engineering-grade intelligence. Founded by former flight test engineers from a leading Swiss VTOL manufacturer, our operations are built on a foundation of aviation safety and rigorous technical validation. 
+
+
+Headquarters: Zürich, Switzerland 
+Primary Coordinate System: CH1903+ / LV95 (EPSG:2056)
+Operational Authorization: BAZL/FOCA Specific Category (PDRA-S01)
+Association: Geosuisse / DIAS 
+
+Alexander Craig 
+Drone Pilot
+Former Flight Test Engineer. A1/A2/A3 and PDRA-S01 certified.
+
+Domenic Carigiet
+Drone Pilot
+Former Flight Test Engineer. A1/A2/A3 and PDRA-S01 certified.
+
+Benjamin Atieku-Dzandu
+Photogrammetry Specialist
+Specialised in LiDAR processing, point cloud classification, and BIM workflows. 

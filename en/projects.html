@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Altispectra</title>
+    <meta name="description" content="Geospatial reference projects from Altispectra: Urban mapping, infrastructure inspection, volume measurement, and more. Sample data available for download.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                colors: { 'alti-blue': '#1A5FBF', 'alti-blue-light': '#EBF2FC', 'alti-dark': '#0A0F1A' },
+                fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+            }}
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .mono { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+        <a href="index.html"><img src="../assets/logo-mark.png" alt="Altispectra" class="h-9 w-auto"></a>
+        <div class="hidden md:flex items-center gap-10">
+            <a href="index.html"            class="text-sm text-gray-500 hover:text-gray-900 tracking-wide transition-colors">Home</a>
+            <a href="services.html"         class="text-sm text-gray-500 hover:text-gray-900 tracking-wide transition-colors">Services</a>
+            <a href="projects.html"         class="text-sm font-semibold text-gray-900 tracking-wide border-b border-gray-800 pb-0.5">Projects</a>
+            <a href="contact.html"          class="text-sm text-gray-500 hover:text-gray-900 tracking-wide transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-3 text-xs tracking-widest">
+                <a href="../projekte.html" class="text-gray-400 hover:text-black transition-colors">DE</a>
+                <span class="text-black font-semibold border-b-2 border-alti-blue pb-0.5">EN</span>
+                <a href="../fr/projets.html" class="text-gray-400 hover:text-black transition-colors">FR</a>
+            </div>
+            <a href="contact.html" class="hidden md:inline-block text-xs tracking-widest border border-black px-5 py-2.5 hover:bg-black hover:text-white transition-all duration-200">GET IN TOUCH</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══ PAGE HEADER ═══ -->
+<section class="pt-36 pb-16 px-8 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto grid grid-cols-12 gap-8">
+        <div class="col-span-12 md:col-span-7">
+            <p class="text-xs tracking-widest text-alti-blue uppercase mb-4">Reference Projects</p>
+            <h1 class="text-5xl font-light text-gray-900 tracking-tight leading-tight">Our Projects.</h1>
+        </div>
+        <div class="col-span-12 md:col-span-4 md:col-start-9 flex items-end">
+            <p class="text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Every project includes a comprehensive RMSE quality report.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PROJECT LIST ═══ -->
+<section class="px-8">
+    <div class="max-w-7xl mx-auto divide-y divide-gray-100">
+
+        <!-- Project 01 -->
+        <div class="py-16 grid grid-cols-12 gap-8 items-start">
+            <div class="col-span-12 md:col-span-5">
+                <div class="bg-gray-100 aspect-video flex items-center justify-center relative overflow-hidden">
+                    <p class="text-xs text-gray-300 tracking-widest">PROJECT IMAGE PLACEHOLDER</p>
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1.5 border-l-2 border-alti-blue">
+                        <p class="text-xs text-gray-600 mono">GSD: 1.4 cm/px · LV95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-7">
+                <div class="flex items-start justify-between mb-4">
+                    <span class="text-xs text-gray-300 tracking-widest mono">01</span>
+                    <span class="text-xs text-gray-400 tracking-widest">2025</span>
+                </div>
+                <h2 class="text-2xl font-light text-gray-900 tracking-tight mb-1">Bahnhofstrasse — Urban Survey</h2>
+                <p class="text-xs text-gray-400 tracking-widest uppercase mb-5">Zurich, CH</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">Photogrammetry</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">LV95</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">Urban</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1 mono">.TIFF</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1 mono">.LAS</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. High-resolution orthomosaic mapping of downtown core. RMSE-validated results for official surveyors and urban planning. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-xs tracking-widest border border-alti-blue text-alti-blue px-6 py-3 hover:bg-alti-blue hover:text-white transition-all duration-200">
+                    VIEW 3D MODEL
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="py-16 grid grid-cols-12 gap-8 items-start">
+            <div class="col-span-12 md:col-span-5">
+                <div class="bg-gray-100 aspect-video flex items-center justify-center relative overflow-hidden">
+                    <p class="text-xs text-gray-300 tracking-widest">PROJECT IMAGE PLACEHOLDER</p>
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1.5 border-l-2 border-alti-blue">
+                        <p class="text-xs text-gray-600 mono">LiDAR · 48M pts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-7">
+                <div class="flex items-start justify-between mb-4">
+                    <span class="text-xs text-gray-300 tracking-widest mono">02</span>
+                    <span class="text-xs text-gray-400 tracking-widest">2025</span>
+                </div>
+                <h2 class="text-2xl font-light text-gray-900 tracking-tight mb-1">KVA Hagenholz — Industrial Inspection</h2>
+                <p class="text-xs text-gray-400 tracking-widest uppercase mb-5">Zurich-North, CH</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">LiDAR</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">LV95</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">Industrial</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">PDRA-S01</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1 mono">.LAS</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Complete façade inspection with classified LiDAR point cloud for maintenance and planning purposes. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                <a href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-xs tracking-widest border border-alti-blue text-alti-blue px-6 py-3 hover:bg-alti-blue hover:text-white transition-all duration-200">
+                    VIEW 3D MODEL
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="py-16 grid grid-cols-12 gap-8 items-start">
+            <div class="col-span-12 md:col-span-5">
+                <div class="bg-gray-100 aspect-video flex items-center justify-center relative overflow-hidden">
+                    <p class="text-xs text-gray-300 tracking-widest">PROJECT IMAGE PLACEHOLDER</p>
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1.5 border-l-2 border-alti-blue">
+                        <p class="text-xs text-gray-600 mono">RMSE XY: ±1.8 cm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-7">
+                <div class="flex items-start justify-between mb-4">
+                    <span class="text-xs text-gray-300 tracking-widest mono">03</span>
+                    <span class="text-xs text-gray-400 tracking-widest">2024</span>
+                </div>
+                <h2 class="text-2xl font-light text-gray-900 tracking-tight mb-1">A3 Corridor — Infrastructure Survey</h2>
+                <p class="text-xs text-gray-400 tracking-widest uppercase mb-5">Canton of Zurich, CH</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">LiDAR + Photogrammetry</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">LV95 / LN02</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">Infrastructure</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1 mono">.DXF</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Corridor survey using combined LiDAR and photogrammetry approach for road authority. RMSE-validated, LN02-compliant. Duis aute irure dolor in reprehenderit.</p>
+                <a href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-xs tracking-widest border border-alti-blue text-alti-blue px-6 py-3 hover:bg-alti-blue hover:text-white transition-all duration-200">
+                    VIEW 3D MODEL
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="py-16 grid grid-cols-12 gap-8 items-start">
+            <div class="col-span-12 md:col-span-5">
+                <div class="bg-gray-100 aspect-video flex items-center justify-center relative overflow-hidden">
+                    <p class="text-xs text-gray-300 tracking-widest">PROJECT IMAGE PLACEHOLDER</p>
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1.5 border-l-2 border-alti-blue">
+                        <p class="text-xs text-gray-600 mono">Vol.: ±0.3% Accuracy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-7">
+                <div class="flex items-start justify-between mb-4">
+                    <span class="text-xs text-gray-300 tracking-widest mono">04</span>
+                    <span class="text-xs text-gray-400 tracking-widest">2024</span>
+                </div>
+                <h2 class="text-2xl font-light text-gray-900 tracking-tight mb-1">Deponie Teuchelweiher — Volume Monitoring</h2>
+                <p class="text-xs text-gray-400 tracking-widest uppercase mb-5">Canton of Berne, CH</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">Photogrammetry</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">LV95</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1">Volume Analysis</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1 mono">.CSV</span>
+                    <span class="text-xs text-gray-500 border border-gray-200 px-2 py-1 mono">.PDF</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Repeat measurements for volume proof and billing purposes. Dispute-resolution documentation for client and contractor. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                <a href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-xs tracking-widest border border-alti-blue text-alti-blue px-6 py-3 hover:bg-alti-blue hover:text-white transition-all duration-200">
+                    VIEW 3D MODEL
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══ DATA PORTAL ═══ -->
+<section id="data" class="py-28 px-8 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-14">
+            <p class="text-xs tracking-widest text-alti-blue uppercase mb-4">Data Portal</p>
+            <h2 class="text-4xl font-light text-gray-900 tracking-tight leading-tight">Download Sample Data.</h2>
+            <p class="text-sm text-gray-500 mt-4 max-w-xl leading-relaxed">Evaluate our delivery quality directly in your own software — before you commission a project.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
+            <div class="bg-white p-8">
+                <div class="flex items-start justify-between mb-6">
+                    <div class="w-10 h-10 bg-alti-blue-light flex items-center justify-center">
+                        <svg class="w-5 h-5 text-alti-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    </div>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.LAS</span>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-1.5">LiDAR Point Cloud</h3>
+                <p class="text-xs text-gray-500 mb-1 leading-relaxed">Urban facade scan — 2.4M points, classified, LV95 (EPSG:2056)</p>
+                <p class="text-xs text-gray-400 mb-6 mono">~ 85 MB</p>
+                <a href="#" class="inline-flex items-center gap-2 text-xs tracking-widest text-alti-blue hover:text-blue-800 transition-colors border-b border-alti-blue pb-0.5">
+                    DOWNLOAD <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                </a>
+            </div>
+            <div class="bg-white p-8">
+                <div class="flex items-start justify-between mb-6">
+                    <div class="w-10 h-10 bg-alti-blue-light flex items-center justify-center">
+                        <svg class="w-5 h-5 text-alti-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    </div>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.TIFF</span>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-1.5">Orthomosaic (GeoTIFF)</h3>
+                <p class="text-xs text-gray-500 mb-1 leading-relaxed">Orthomosaic — 1.8 cm/px, EPSG:2056 (LV95), RGB, georeferenced</p>
+                <p class="text-xs text-gray-400 mb-6 mono">~ 120 MB</p>
+                <a href="#" class="inline-flex items-center gap-2 text-xs tracking-widest text-alti-blue hover:text-blue-800 transition-colors border-b border-alti-blue pb-0.5">
+                    DOWNLOAD <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                </a>
+            </div>
+            <div class="bg-white p-8">
+                <div class="flex items-start justify-between mb-6">
+                    <div class="w-10 h-10 bg-alti-blue-light flex items-center justify-center">
+                        <svg class="w-5 h-5 text-alti-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.PDF</span>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-1.5">Technical Quality Report</h3>
+                <p class="text-xs text-gray-500 mb-1 leading-relaxed">GCP residuals, RMSE analysis, complete methodology and sensor parameters</p>
+                <p class="text-xs text-gray-400 mb-6 mono">~ 2 MB</p>
+                <a href="#" class="inline-flex items-center gap-2 text-xs tracking-widest text-alti-blue hover:text-blue-800 transition-colors border-b border-alti-blue pb-0.5">
+                    DOWNLOAD <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="border-t border-gray-100 pt-14 pb-8 px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+            <div class="col-span-2 md:col-span-1">
+                <img src="../assets/logo-with-name.png" alt="Altispectra" class="h-10 w-auto mb-4">
+                <p class="text-xs text-gray-400 leading-relaxed">Zurich, Switzerland<br>DACH Region</p>
+                <p class="text-xs text-gray-400 mt-3">CHF 5M Liability · BAZL/FOCA</p>
+            </div>
+            <div>
+                <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Services</p>
+                <ul class="space-y-2.5">
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Precision Mapping</a></li>
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Construction BIM</a></li>
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Volume Analysis</a></li>
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Inspections</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Company</p>
+                <ul class="space-y-2.5">
+                    <li><a href="index.html#about" class="text-xs text-gray-600 hover:text-black transition-colors">About Us</a></li>
+                    <li><a href="projects.html"        class="text-xs text-gray-600 hover:text-black transition-colors">Projects</a></li>
+                    <li><a href="contact.html"         class="text-xs text-gray-600 hover:text-black transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Compliance</p>
+                <ul class="space-y-2.5">
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">BAZL / FOCA</a></li>
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">GEOSUISSE</a></li>
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">Legal Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-100 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-400">© 2025 Altispectra. All rights reserved.</p>
+            <div class="flex items-center gap-4 text-xs tracking-widest">
+                <a href="../projekte.html" class="text-gray-400 hover:text-black transition-colors">DE</a>
+                <span class="text-gray-900 font-semibold border-b-2 border-alti-blue pb-0.5">EN</span>
+                <a href="../fr/projets.html" class="text-gray-400 hover:text-black transition-colors">FR</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

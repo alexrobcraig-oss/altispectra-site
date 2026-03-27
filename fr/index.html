@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altispectra — Intelligence Géospatiale Certifiée</title>
+    <meta name="description" content="Altispectra fournit des données géospatiales de précision ingénierie pour la construction, l'infrastructure et l'industrie en Suisse. Conforme LV95, certifié BAZL/OFAC.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                colors: { 'alti-blue': '#1A5FBF', 'alti-blue-light': '#EBF2FC', 'alti-dark': '#0A0F1A' },
+                fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+            }}
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .mono { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+        <a href="index.html"><img src="../assets/logo-mark.png" alt="Altispectra" class="h-9 w-auto"></a>
+        <div class="hidden md:flex items-center gap-10">
+            <a href="index.html"   class="text-sm font-semibold text-gray-900 tracking-wide border-b border-gray-800 pb-0.5">Accueil</a>
+            <a href="services.html" class="text-sm text-gray-500 hover:text-gray-900 tracking-wide transition-colors">Services</a>
+            <a href="projets.html"  class="text-sm text-gray-500 hover:text-gray-900 tracking-wide transition-colors">Projets</a>
+            <a href="contact.html"  class="text-sm text-gray-500 hover:text-gray-900 tracking-wide transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-3 text-xs tracking-widest">
+                <a href="../index.html"    class="text-gray-400 hover:text-black transition-colors">DE</a>
+                <a href="../en/index.html" class="text-gray-400 hover:text-black transition-colors">EN</a>
+                <span class="text-black font-semibold border-b-2 border-alti-blue pb-0.5">FR</span>
+            </div>
+            <a href="contact.html" class="hidden md:inline-block text-xs tracking-widest border border-black px-5 py-2.5 hover:bg-black hover:text-white transition-all duration-200">DEMANDE</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="pt-36 pb-20 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-12 gap-8 items-start">
+        <div class="col-span-12 md:col-span-5">
+            <p class="text-xs tracking-widest text-alti-blue uppercase mb-8">Zurich — Région DACH</p>
+            <h1 class="text-5xl lg:text-6xl font-light leading-[1.08] text-gray-900 mb-8 tracking-tight">Intelligence<br>Géospatiale<br>Certifiée.</h1>
+            <p class="text-sm text-gray-500 leading-relaxed mb-4 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nous ne sommes pas des pilotes de drones — nous sommes des spécialistes en géomatique.</p>
+            <p class="text-sm text-gray-500 leading-relaxed mb-10 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Données spatiales de précision ingénierie pour la construction, l'infrastructure et l'industrie.</p>
+            <a href="services.html" class="inline-flex items-center gap-3 text-xs tracking-widest text-gray-700 hover:text-black border-b border-gray-300 hover:border-black pb-1 transition-all">
+                DÉCOUVRIR NOS SERVICES
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </div>
+        <div class="col-span-12 md:col-span-7">
+            <div class="bg-gray-100 aspect-[16/10] flex items-center justify-center relative overflow-hidden">
+                <p class="text-xs text-gray-400 tracking-widest">IMAGE PRINCIPALE — Vue aérienne / Orthomosaïque</p>
+                <div class="absolute bottom-4 left-4 bg-white/90 px-4 py-3 border-l-2 border-alti-blue">
+                    <p class="text-xs font-semibold text-gray-800 mono">GSD : 1,4 cm/px</p>
+                    <p class="text-xs text-gray-500 mono">RMSE XY : ±1,8 cm  |  LV95</p>
+                </div>
+                <div class="absolute top-4 right-4 bg-white/90 px-3 py-1.5">
+                    <p class="text-xs text-gray-500 tracking-widest">WINGTRA ONE GEN II</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ TRUST BAR ═══ -->
+<section class="border-t border-b border-gray-100 py-8 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-y-6 md:gap-y-0 md:divide-x divide-gray-100">
+        <div class="md:pr-8">
+            <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Réglementation</p>
+            <p class="text-sm font-semibold text-gray-900">BAZL / OFAC</p>
+            <p class="text-xs text-gray-500 mt-0.5">Opérateur certifié</p>
+        </div>
+        <div class="md:px-8">
+            <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Assurance</p>
+            <p class="text-sm font-semibold text-gray-900">CHF 5'000'000</p>
+            <p class="text-xs text-gray-500 mt-0.5">Responsabilité civile</p>
+        </div>
+        <div class="md:px-8">
+            <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Système de coord.</p>
+            <p class="text-sm font-semibold text-gray-900">CH1903+ / LV95</p>
+            <p class="text-xs text-gray-500 mt-0.5">Conforme LN02</p>
+        </div>
+        <div class="md:px-8">
+            <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Technologie</p>
+            <p class="text-sm font-semibold text-gray-900">Pedigree Wingtra</p>
+            <p class="text-xs text-gray-500 mt-0.5">Plateforme VTOL</p>
+        </div>
+        <div class="md:pl-8">
+            <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Association</p>
+            <p class="text-sm font-semibold text-gray-900">GEOSUISSE</p>
+            <p class="text-xs text-gray-500 mt-0.5">Aligné DIAS</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ SERVICES SUMMARY ═══ -->
+<section class="py-28 px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-12 gap-8 mb-16">
+            <div class="col-span-12 md:col-span-5">
+                <p class="text-xs tracking-widest text-alti-blue uppercase mb-4">Services</p>
+                <h2 class="text-4xl font-light text-gray-900 tracking-tight leading-tight">Ce que nous livrons.</h2>
+            </div>
+            <div class="col-span-12 md:col-span-4 md:col-start-9 flex items-end">
+                <a href="services.html" class="inline-flex items-center gap-2 text-xs tracking-widest text-gray-500 hover:text-black border-b border-gray-300 hover:border-black pb-0.5 transition-all">
+                    TOUS LES SERVICES <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="divide-y divide-gray-100">
+            <div class="py-8 grid grid-cols-12 gap-6 items-baseline">
+                <span class="col-span-1 text-xs text-gray-300 mono">01</span>
+                <h3 class="col-span-11 md:col-span-3 text-base font-semibold text-gray-900">Cartographie de Précision</h3>
+                <p class="col-span-11 col-start-2 md:col-span-5 md:col-start-auto text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. LiDAR haute précision et photogrammétrie avec assurance qualité validée RMSE.</p>
+                <div class="col-span-11 col-start-2 md:col-span-3 md:col-start-auto flex flex-wrap gap-2">
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.LAS</span>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.TIFF</span>
+                </div>
+            </div>
+            <div class="py-8 grid grid-cols-12 gap-6 items-baseline">
+                <span class="col-span-1 text-xs text-gray-300 mono">02</span>
+                <h3 class="col-span-11 md:col-span-3 text-base font-semibold text-gray-900">BIM Construction / Scan-to-BIM</h3>
+                <p class="col-span-11 col-start-2 md:col-span-5 md:col-start-auto text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nuages de points classifiés pour intégration BIM dans le génie civil et du bâtiment.</p>
+                <div class="col-span-11 col-start-2 md:col-span-3 md:col-start-auto flex flex-wrap gap-2">
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.IFC</span>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.DWG</span>
+                </div>
+            </div>
+            <div class="py-8 grid grid-cols-12 gap-6 items-baseline">
+                <span class="col-span-1 text-xs text-gray-300 mono">03</span>
+                <h3 class="col-span-11 md:col-span-3 text-base font-semibold text-gray-900">Analyse Volumétrique</h3>
+                <p class="col-span-11 col-start-2 md:col-span-5 md:col-start-auto text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Calcul volumétrique incontestable pour excavations et stocks de granulats.</p>
+                <div class="col-span-11 col-start-2 md:col-span-3 md:col-start-auto flex flex-wrap gap-2">
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.CSV</span>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1 mono">.PDF</span>
+                </div>
+            </div>
+            <div class="py-8 grid grid-cols-12 gap-6 items-baseline">
+                <span class="col-span-1 text-xs text-gray-300 mono">04</span>
+                <h3 class="col-span-11 md:col-span-3 text-base font-semibold text-gray-900">Inspections Urbaines</h3>
+                <p class="col-span-11 col-start-2 md:col-span-5 md:col-start-auto text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Relevés de façades et d'infrastructures sous autorisation C2 / PDRA-S01.</p>
+                <div class="col-span-11 col-start-2 md:col-span-3 md:col-start-auto flex flex-wrap gap-2">
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1">PDRA-S01</span>
+                    <span class="text-xs text-gray-400 border border-gray-200 px-2 py-1">Cat. C2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ ABOUT US ═══ -->
+<section id="apropos" class="py-28 px-8 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+            <p class="text-xs tracking-widest text-alti-blue uppercase mb-4">À propos</p>
+            <h2 class="text-4xl font-light text-gray-900 tracking-tight leading-tight">L'Équipe.</h2>
+        </div>
+        <div class="grid grid-cols-12 gap-12 mb-20">
+            <div class="col-span-12 md:col-span-5">
+                <p class="text-sm text-gray-500 leading-relaxed mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p class="text-sm text-gray-500 leading-relaxed">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-span-12 md:col-span-5 md:col-start-8">
+                <div class="space-y-4">
+                    <div class="flex gap-6 text-sm border-b border-gray-100 pb-4">
+                        <span class="text-xs text-gray-400 tracking-widest w-28 flex-shrink-0 pt-0.5">Siège social</span>
+                        <span class="text-gray-700">Zurich, Suisse</span>
+                    </div>
+                    <div class="flex gap-6 text-sm border-b border-gray-100 pb-4">
+                        <span class="text-xs text-gray-400 tracking-widest w-28 flex-shrink-0 pt-0.5">Zone d'interv.</span>
+                        <span class="text-gray-700">Région DACH</span>
+                    </div>
+                    <div class="flex gap-6 text-sm border-b border-gray-100 pb-4">
+                        <span class="text-xs text-gray-400 tracking-widest w-28 flex-shrink-0 pt-0.5">Licences</span>
+                        <span class="text-gray-700">A1 / A2 / A3 · PDRA-S01</span>
+                    </div>
+                    <div class="flex gap-6 text-sm border-b border-gray-100 pb-4">
+                        <span class="text-xs text-gray-400 tracking-widest w-28 flex-shrink-0 pt-0.5">Assurance</span>
+                        <span class="text-gray-700">CHF 5'000'000 RC</span>
+                    </div>
+                    <div class="flex gap-6 text-sm">
+                        <span class="text-xs text-gray-400 tracking-widest w-28 flex-shrink-0 pt-0.5">Association</span>
+                        <span class="text-gray-700">GEOSUISSE / DIAS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
+            <div class="bg-white p-8">
+                <div class="bg-gray-100 aspect-square w-24 mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-0.5">Alexander Craig</h3>
+                <p class="text-xs text-alti-blue tracking-widest uppercase mb-4">Pilote de Drone</p>
+                <p class="text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ancien ingénieur d'essais en vol. Certifié A1/A2/A3 et PDRA-S01.</p>
+            </div>
+            <div class="bg-white p-8">
+                <div class="bg-gray-100 aspect-square w-24 mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-0.5">Domenic Carigiet</h3>
+                <p class="text-xs text-alti-blue tracking-widest uppercase mb-4">Pilote de Drone</p>
+                <p class="text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ancien ingénieur d'essais en vol. Certifié A1/A2/A3 et PDRA-S01.</p>
+            </div>
+            <div class="bg-white p-8">
+                <div class="bg-gray-100 aspect-square w-24 mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-0.5">Benjamin Atieku-Dzandu</h3>
+                <p class="text-xs text-alti-blue tracking-widest uppercase mb-4">Spécialiste en Photogrammétrie</p>
+                <p class="text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spécialisé dans le traitement LiDAR, la classification de nuages de points et les workflows BIM.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ CTA STRIP ═══ -->
+<section class="py-20 px-8 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+            <p class="text-2xl font-light text-gray-900 tracking-tight mb-1">Prêt pour votre prochain projet ?</p>
+            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="contact.html" class="flex-shrink-0 text-xs tracking-widest border border-black px-8 py-3.5 hover:bg-black hover:text-white transition-all duration-200">NOUS CONTACTER</a>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="border-t border-gray-100 pt-14 pb-8 px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+            <div class="col-span-2 md:col-span-1">
+                <img src="../assets/logo-with-name.png" alt="Altispectra" class="h-10 w-auto mb-4">
+                <p class="text-xs text-gray-400 leading-relaxed">Zurich, Suisse<br>Région DACH</p>
+                <p class="text-xs text-gray-400 mt-3">RC CHF 5M · BAZL/OFAC</p>
+            </div>
+            <div>
+                <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Services</p>
+                <ul class="space-y-2.5">
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Cartographie</a></li>
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">BIM Construction</a></li>
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Analyse volumétrique</a></li>
+                    <li><a href="services.html" class="text-xs text-gray-600 hover:text-black transition-colors">Inspections</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Entreprise</p>
+                <ul class="space-y-2.5">
+                    <li><a href="index.html#apropos" class="text-xs text-gray-600 hover:text-black transition-colors">À propos</a></li>
+                    <li><a href="projets.html"       class="text-xs text-gray-600 hover:text-black transition-colors">Projets</a></li>
+                    <li><a href="contact.html"       class="text-xs text-gray-600 hover:text-black transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Conformité</p>
+                <ul class="space-y-2.5">
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">BAZL / OFAC</a></li>
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">GEOSUISSE</a></li>
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">Protection des données</a></li>
+                    <li><a href="#" class="text-xs text-gray-600 hover:text-black transition-colors">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-100 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-400">© 2025 Altispectra. Tous droits réservés.</p>
+            <div class="flex items-center gap-4 text-xs tracking-widest">
+                <a href="../index.html"    class="text-gray-400 hover:text-black transition-colors">DE</a>
+                <a href="../en/index.html" class="text-gray-400 hover:text-black transition-colors">EN</a>
+                <span class="text-gray-900 font-semibold border-b-2 border-alti-blue pb-0.5">FR</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

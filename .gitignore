@@ -1,0 +1,11 @@
+# Internal reference docs — not for public repo
+ALTISPECTRA_BUSINESS_CONTEXT.md
+BUILD_LOG.md
+
+# Source/design assets — not needed for the live site
+Logo/
+Example website/
+
+# macOS system files
+.DS_Store
+**/.DS_Store

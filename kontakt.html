@@ -20,6 +20,8 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', system-ui, sans-serif; }
     </style>
+    <!-- HubSpot Analytics -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/146395517.js"></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
@@ -58,56 +60,38 @@
 
         <!-- Left: Contact details -->
         <div class="col-span-12 md:col-span-4">
-            <p class="text-sm text-gray-500 leading-relaxed mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kontaktieren Sie uns für ein unverbindliches Erstgespräch über Ihr Projekt. Wir antworten innerhalb von 24 Stunden.</p>
+            <p class="text-sm text-gray-500 leading-relaxed mb-10">Stellen Sie uns Ihr Projekt vor — ob Aushubkontrolle, Fassadeninspektion oder Scan-to-BIM. Wir erstellen Ihnen ein technisches Angebot und antworten innerhalb von 24 Stunden.</p>
 
             <div class="space-y-6">
                 <div class="border-b border-gray-100 pb-5">
                     <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">E-Mail</p>
-                    <a href="mailto:info@altispectra.com" class="text-sm text-gray-700 hover:text-alti-blue transition-colors">info@altispectra.com</a>
+                    <a href="mailto:team@altispectra.com" class="text-sm text-gray-700 hover:text-alti-blue transition-colors">team@altispectra.com</a>
                 </div>
                 <div class="border-b border-gray-100 pb-5">
                     <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Standort</p>
                     <p class="text-sm text-gray-700">Zürich, Schweiz</p>
                 </div>
                 <div class="border-b border-gray-100 pb-5">
-                    <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Einsatzgebiet</p>
-                    <p class="text-sm text-gray-700">DACH-Region</p>
-                </div>
-                <div class="border-b border-gray-100 pb-5">
                     <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Lizenzen</p>
                     <p class="text-sm text-gray-700">A1 / A2 / A3 · PDRA-S01</p>
                 </div>
                 <div>
-                    <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Versicherung</p>
-                    <p class="text-sm text-gray-700">CHF 5'000'000 Haftpflicht</p>
+                    <p class="text-xs text-gray-400 tracking-widest uppercase mb-1.5">Koordinatensystem</p>
+                    <p class="text-sm text-gray-700">CH1903+ / LV95 (EPSG:2056)</p>
                 </div>
             </div>
         </div>
 
-        <!-- Right: HubSpot form placeholder -->
+        <!-- Right: HubSpot form -->
         <div class="col-span-12 md:col-span-8 bg-gray-50 p-10 lg:p-14">
-            <div class="border-2 border-dashed border-gray-200 p-10 flex flex-col items-center justify-center min-h-[480px] text-center">
-                <div class="w-10 h-10 border border-gray-300 flex items-center justify-center mb-5">
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                </div>
-                <p class="text-sm font-medium text-gray-600 mb-1">HubSpot Kontaktformular</p>
-                <p class="text-xs text-gray-400 tracking-widest mb-8">EMBED-CODE PLATZHALTER</p>
-                <div class="bg-white border border-gray-200 p-5 text-left w-full max-w-md">
-                    <p class="text-xs text-gray-400 tracking-widest mb-3">EMBED-CODE</p>
-                    <code class="text-xs text-gray-500 font-mono leading-relaxed block">
-                        &lt;!-- HubSpot Form Embed --&gt;<br>
-                        &lt;script charset="utf-8" type="text/javascript"<br>
-                        &nbsp;src="//js.hsforms.net/forms/embed/v2.js"&gt;&lt;/script&gt;<br>
-                        &lt;script&gt;<br>
-                        &nbsp;hbspt.forms.create(&#123;<br>
-                        &nbsp;&nbsp;region: "eu1",<br>
-                        &nbsp;&nbsp;portalId: "XXXXXXXX",<br>
-                        &nbsp;&nbsp;formId: "XXXXXXXX"<br>
-                        &nbsp;&#125;);<br>
-                        &lt;/script&gt;
-                    </code>
-                </div>
-            </div>
+            <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+                hbspt.forms.create({
+                    region: "eu1",
+                    portalId: "146395517",
+                    formId: "aa589309-2939-49df-9908-65d277262a07"
+                });
+            </script>
         </div>
 
     </div>
@@ -120,7 +104,7 @@
             <div class="col-span-2 md:col-span-1">
                 <img src="assets/logo-with-name.png" alt="Altispectra" class="h-10 w-auto mb-4">
                 <p class="text-xs text-gray-400 leading-relaxed">Zürich, Schweiz<br>DACH-Region</p>
-                <p class="text-xs text-gray-400 mt-3">CHF 5M Haftpflicht · BAZL/FOCA</p>
+                <p class="text-xs text-gray-400 mt-3">BAZL/FOCA · Zertifizierter Operator</p>
             </div>
             <div>
                 <p class="text-xs tracking-widest text-gray-400 uppercase mb-4">Leistungen</p>
